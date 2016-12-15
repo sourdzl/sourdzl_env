@@ -1,8 +1,32 @@
 #!/usr/bin/env bash
 
+# Install stuff via dotbot
 set -e
+if [ `uname` == "Darwin" ]; then
+    CONFIG="osx.conf.yaml"
+else
+    CONFIG="linux.conf.yaml"
 
-CONFIG="install.conf.yaml"
+    # Install xmonad and dmenu.
+    sudo apt-get install xmonad suckless-tools xscreensaver
+
+    # Install handy status bar
+    sudo apt-get install xmobar
+    # Ehh, do this later.
+    # # Latest git
+    # # https://www.howtoforge.com/install-git-on-ubuntu-13.1
+    # sudo apt-get install git
+    # sudo apt-get update
+    # sudo add-apt-repository ppa:git-core/ppa
+
+    # # zsh
+    # sudo apt-get install zsh
+    # chsh -s /bin/zsh
+
+    # # antigen
+    # curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > antigen.zsh
+fi
+
 DOTBOT_DIR="dotbot"
 
 DOTBOT_BIN="bin/dotbot"
