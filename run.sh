@@ -6,17 +6,18 @@
 # install pip
 sudo python get-pip.py
 
-# scala time
-brew install scala
 
 # python3
 brew install python3
 pip3 install --upgrade pip
 pip3 install jupyter
 
+# scala
+brew install scala
+
 # scala support for jupyter
-# brew install --HEAD paulp/extras/coursier # scala dependency manager
-# TODO: finish this
+brew install --HEAD paulp/extras/coursier # scala dependency manager
+jupyter-scala/jupyter-scala
 
 # use keychain github credentials
 git config --global credential.helper osxkeychain
@@ -34,3 +35,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
+# dotbot stuff
+install
+
+# other brew stuff
+brew.sh
