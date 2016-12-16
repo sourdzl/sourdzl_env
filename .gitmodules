@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "jupyter-scala"]
+	path = jupyter-scala
+	url = https://github.com/alexarchambault/jupyter-scala

@@ -1,10 +1,25 @@
+# only works on OS X
+
 # install brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+# install pip
+sudo python get-pip.py
+
+# scala time
+brew install scala
+
+# python3
+brew install python3
+pip3 install --upgrade pip
+pip3 install jupyter
+
+# scala support for jupyter
+# brew install --HEAD paulp/extras/coursier # scala dependency manager
+# TODO: finish this
 
 # use keychain github credentials
 git config --global credential.helper osxkeychain
-
 
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
