@@ -6,7 +6,6 @@
 # install pip
 sudo python get-pip.py
 
-
 # python3
 brew install python3
 pip3 install --upgrade pip
@@ -39,4 +38,4 @@ defaults write com.apple.finder AppleShowAllFiles YES
 install
 
 # other brew stuff
-brew.sh
+./brew.sh

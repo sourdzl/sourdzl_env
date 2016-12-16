@@ -4,7 +4,6 @@
     # Manually make directory since there are multiple levels
     - [mkdir -p ~/.tmux/plugins, Creating tmux directory...]
 - link:
-    ~/.amethyst: amethyst
     ~/.atom: atom
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
@@ -18,8 +17,6 @@
     ~/.zshrc: zsh/zshrc
     ~/.zsh_profile: zsh/zsh_profile
     ~/.slate.js.d: slate/slate.js.d
-    ~/.slate.js: slate/slate.js
-    ~/.flake8rc: flake8rc
     # Tmuxinator
     ~/.tmuxinator: tmuxinator/tmuxinator
     ~/.tmuxinator.zsh: tmuxinator/tmuxinator.zsh
@@ -31,9 +28,4 @@
     ~/.zenburn.conf: tmux/zenburn.conf
     # Karabiner
     ~/Library/Application Support/Karabiner: Karabiner
-    # LaunchAgents
-    # Automatically commit ~/Dropbox/jason/org files
-    ~/Library/LaunchAgents/org.mode.jason.plist: LaunchAgents/org.mode.jason.plist
-    # Hammerspoon
-    ~/.hammerspoon: hammerspoon
     ~/.agignore: agignore
