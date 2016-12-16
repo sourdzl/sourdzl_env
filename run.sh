@@ -35,7 +35,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 defaults write com.apple.finder AppleShowAllFiles YES
 
 # dotbot stuff
-install
+./dotbot_install
 
 # other brew stuff
 ./brew.sh
