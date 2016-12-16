@@ -14,6 +14,9 @@ pip3 install jupyter
 # scala
 brew install scala
 
+# spark
+brew install apache-spark
+
 # scala support for jupyter
 brew install --HEAD paulp/extras/coursier # scala dependency manager
 jupyter-scala/jupyter-scala
@@ -37,5 +40,5 @@ defaults write com.apple.finder AppleShowAllFiles YES
 # dotbot stuff
 ./dotbot_install
 
-# other brew stuff
-./brew.sh
+# make zsh live
+source ~/.zshrc

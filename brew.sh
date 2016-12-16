@@ -16,8 +16,9 @@ brew cask install iterm2
 brew cask install karabiner
 brew cask install seil
 brew cask install slack
-brew cask install sublime-text3
-brew cask install sogouinput
+brew cask install sublime-text
+
+
 # VLC
 brew cask install vlc
 
