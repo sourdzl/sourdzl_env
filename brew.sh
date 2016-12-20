@@ -17,6 +17,7 @@ brew cask install karabiner
 brew cask install seil
 brew cask install slack
 brew cask install sublime-text
+brew cask install flux
 
 
 # VLC
