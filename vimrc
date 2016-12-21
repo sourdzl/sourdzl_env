@@ -14,6 +14,9 @@ set number
 
 set background=dark
 " colorscheme solarized
+let g:solarized_termcolors=256
+colorscheme solarized
+
 
 set encoding=utf8
 set shiftwidth=4

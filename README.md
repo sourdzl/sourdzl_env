@@ -1,8 +1,10 @@
-# A script to clone my environment/preferences, still in progress!
+# Clone my environment/preferences.  in progress, but working!
 
 * To Run
-**
- ./run.sh
+** Command Line
+./run.sh
 ./brew.sh
+
+That's it!  Relies on dotbot to symlink things like '~/.vimrc' to the local file vimrc
 
 
