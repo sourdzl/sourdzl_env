@@ -8,13 +8,38 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Make sure we’re using the latest Homebrew
 brew update
 
+
+# python and scala
+
+# install pip
+# sudo python get-pip.py
+
+# installing python from brew so that pip comes with it
+brew install python
+
+# python3
+brew install python3
+pip3 install --upgrade pip
+pip3 install jupyter
+
+# scala
+brew install scala
+
+# spark
+brew install apache-spark
+
+# scala support for jupyter
+brew install --HEAD paulp/extras/coursier # scala dependency manager
+jupyter-scala/jupyter-scala
+
+# gui applications
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 brew cask install android-file-transfer
 brew cask install dropbox
 brew cask install iterm2
-brew cask install karabiner
-brew cask install seil
+# brew cask install karabiner
+# brew cask install seil
 brew cask install slack
 brew cask install sublime-text
 brew cask install flux
@@ -44,11 +69,13 @@ brew install wget --enable-iri
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
-# We're installing python from brew so that pip comes with it
-# brew install python
 
-# Install everything else
+# everything else
 brew install ag
+
+# ctrl-r fuzzy finder
+brew install fzf
+
 
 #########
 # Emacs #
