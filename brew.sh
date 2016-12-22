@@ -43,11 +43,14 @@ brew cask install iterm2
 brew cask install slack
 brew cask install sublime-text
 brew cask install flux
-
-
-# VLC
+brew cask install cheatsheet
 brew cask install vlc
+brew cask install spotify
 
+# better previews in finder
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+
+brew cask install 1password # encrypted credentials in this directory
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
@@ -72,6 +75,12 @@ brew install homebrew/dupes/grep
 
 # everything else
 brew install ag
+
+brew install htop # better than top
+
+brew install vimpager # color highlighting in less type commands
+
+brew install tree # depth indented ls
 
 # ctrl-r fuzzy finder
 brew install fzf
@@ -99,3 +108,17 @@ brew cleanup
 
 # Amazing CLI for postgres made w/ python prompt-toolkit.
 brew install pgcli
+
+# cleanup the dock
+brew install dockutil
+dockutil --remove all
+
+dockutil --add /Applications/iTerm.app
+dockutil --add /Applications/Calendar.app
+dockutil --add '/Applications/App Store.app'
+dockutil --add '/Applications/System Preferences.app'
+dockutil --add '/Applications/Slack.app'
+dockutil --add '/Applications/Spotify.app'
+dockutil --add '~/Applications' --view grid --display stack
+dockutil --add '~/Downloads' --view fan --display folder --allhomes
+dockutil --add '~' --view grid --display stack

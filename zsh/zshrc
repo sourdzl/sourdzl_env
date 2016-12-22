@@ -89,3 +89,9 @@ function fzf_tmux_session {
 alias fzftmux=fzf_tmux_session
 
 export TERM=xterm-256color
+
+
+# replace less with vimpager for coloration
+export PAGER=/usr/local/bin/vimpager
+alias less=$PAGER
+alias zless=$PAGER
