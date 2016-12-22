@@ -8,15 +8,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Make sure we’re using the latest Homebrew
 brew update
 
-
 # python and scala
-
-# install pip
-# sudo python get-pip.py
 
 # installing python from brew so that pip comes with it
 brew install python
-
 # python3
 brew install python3
 pip3 install --upgrade pip
@@ -24,7 +19,6 @@ pip3 install jupyter
 
 # scala
 brew install scala
-
 # spark
 brew install apache-spark
 
@@ -85,10 +79,15 @@ brew install tree # depth indented ls
 # ctrl-r fuzzy finder
 brew install fzf
 
+# system monitoring in the menu bar
+brew cask install istat-menus
+
 
 #########
 # Emacs #
 #########
+brew install doxygen # tmux dependency?
+
 brew install emacs --with-cocoa
 brew install tmux
 
@@ -113,8 +112,9 @@ brew install pgcli
 brew install dockutil
 dockutil --remove all
 
-dockutil --add /Applications/iTerm.app
-dockutil --add /Applications/Calendar.app
+dockutil --add '/Applications/Safari.app'
+dockutil --add '/Applications/iTerm.app'
+dockutil --add '/Applications/Calendar.app'
 dockutil --add '/Applications/App Store.app'
 dockutil --add '/Applications/System Preferences.app'
 dockutil --add '/Applications/Slack.app'
