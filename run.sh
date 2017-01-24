@@ -1,5 +1,11 @@
 # only works on OS X(?), at least havent tried linux
 
+# ssh key stuff, so that we can actually pull stuff from github
+# note: must add the key to github account keys for this script to work!
+
+ssh-keygen -t rsa -b 4096 -C "danzhanglee@gmail.com"
+ssh-add ~/.ssh/id_rsa
+
 # install brew, so we can run ./brew.sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 

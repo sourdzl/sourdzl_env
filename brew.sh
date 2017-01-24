@@ -79,9 +79,6 @@ brew install tree # depth indented ls
 # ctrl-r fuzzy finder
 brew install fzf
 
-# system monitoring in the menu bar
-brew cask install istat-menus
-
 
 #########
 # Emacs #
