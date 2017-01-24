@@ -13,6 +13,9 @@ ssh-add ~/.ssh/id_rsa
 # use keychain github credentials
 git config --global credential.helper osxkeychain
 
+git config --global user.name "Dan Lee"
+git config --global user.email danzhanglee@gmail.com
+
 # install oh my zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

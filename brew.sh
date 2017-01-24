@@ -78,6 +78,8 @@ brew install tree # depth indented ls
 
 # ctrl-r fuzzy finder
 brew install fzf
+/usr/local/opt/fzf/install
+
 
 
 #########

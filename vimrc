@@ -2,7 +2,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/vim-easy-align'
-Plug 'valloric/youcompleteme'
+" Plug 'valloric/youcompleteme'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 
