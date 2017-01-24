@@ -40,6 +40,7 @@ brew cask install flux
 brew cask install cheatsheet
 brew cask install vlc
 brew cask install spotify
+brew cask install macvim
 
 # better previews in finder
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
