@@ -25,6 +25,13 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
+# turn on hot corners
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tr-corner -integer 3
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-bl-corner -integer 4
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-br-corner -integer 2
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tl-corner -integer 3
+
+
 # increase trackpad sensitivity
 defaults write -g com.apple.trackpad.scaling -float 15.0
 

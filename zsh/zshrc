@@ -95,3 +95,6 @@ export TERM=xterm-256color
 export PAGER=/usr/local/bin/vimpager
 alias less=$PAGER
 alias zless=$PAGER
+
+export WORKON_HOME=~/dev/Envs
+source /usr/local/bin/virtualenvwrapper.sh
