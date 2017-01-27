@@ -4,26 +4,19 @@
     # Manually make directory since there are multiple levels
     - [mkdir -p ~/.tmux/plugins, Creating tmux directory...]
 - link:
-    #~/.atom: atom
     ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     ~/.oh-my-zsh: oh-my-zsh
     ~/.oh-my-zsh/custom: zsh/oh-my-zsh-custom
-    # ~/.emacs.d: emacs.d
-    # Spacemacs
-    #~/.emacs.d: emacs.spacemacs.d
-    #~/.spacemacs: spacemacs
-    #~/.emacs.d/private: emacs.spacemacs.d.private
     ~/.zshrc: zsh/zshrc
     ~/.zsh_profile: zsh/zsh_profile
-    #~/.slate.js.d: slate/slate.js.d
     # Tmuxinator
     ~/.tmuxinator: tmuxinator/tmuxinator
     ~/.tmuxinator.zsh: tmuxinator/tmuxinator.zsh
     # Tmux
     ~/.tmux/plugins/tpm: tmux/plugins/tpm
     ~/.tmux.conf: tmux/tmux.osx.conf
-    ~/.tmux.common.conf: tmux/tmux.common.conf
+    #~/.tmux.common.conf: tmux/tmux.common.conf
     #~/.vimperatorrc: vimperratorrc
     #~/.zenburn.conf: tmux/zenburn.conf
     # Karabiner

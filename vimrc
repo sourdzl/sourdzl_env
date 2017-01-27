@@ -5,10 +5,14 @@ Plug 'junegunn/vim-easy-align'
 " Plug 'valloric/youcompleteme'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
+set nocompatible
+
 syntax on
+
 filetype plugin indent on
 set number
 

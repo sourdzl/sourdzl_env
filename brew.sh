@@ -77,6 +77,8 @@ brew install vimpager # color highlighting in less type commands
 
 brew install tree # depth indented ls
 
+brew install reattach-to-user-namespace # copy/paste support for os-x and tmux
+
 # ctrl-r fuzzy finder
 brew install fzf
 /usr/local/opt/fzf/install
