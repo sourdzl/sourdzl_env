@@ -6,12 +6,16 @@ Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'vim-scripts/indentpython.vim'
+Plug 'scrooloose/syntastic'
+Plug 'nvie/vim-flake8'
 
 call plug#end()
 
 set nocompatible
 
 syntax on
+let python_highlight_all = 1
 
 filetype plugin indent on
 set number
@@ -20,6 +24,8 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
+" system clipboard
+set clipboard=unnamed
 
 set encoding=utf8
 set shiftwidth=4
@@ -29,6 +35,21 @@ set expandtab
 set wrap
 set laststatus=2
 scriptencoding utf-8
+
+" python PEP8 conventions
+au BufNewFile,BufRead *.py
+    \ set softtabstop=4
+    \ set textwidth=79
+    \ set autoindent
+    \ set fileformat=unix
+
+
+
+" enable folding with space bar
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+
 
 " auto reload changes
 set autoread
