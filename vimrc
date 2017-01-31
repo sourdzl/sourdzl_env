@@ -38,10 +38,10 @@ scriptencoding utf-8
 
 " python PEP8 conventions
 au BufNewFile,BufRead *.py
-    \ set softtabstop=4
-    \ set textwidth=79
-    \ set autoindent
-    \ set fileformat=unix
+    \set softtabstop=4
+    \set textwidth=79
+    \set autoindent
+    \set fileformat=unix
 
 
 

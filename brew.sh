@@ -88,9 +88,9 @@ brew install fzf
 #########
 # Emacs #
 #########
-brew install doxygen # tmux dependency?
+#brew install doxygen # tmux dependency?
 
-brew install emacs --with-cocoa
+#brew install emacs --with-cocoa
 brew install tmux
 
 #######
@@ -99,10 +99,8 @@ brew install tmux
 # Install updated git
 brew install git
 # hub - Awesome git wrapper
-brew install hub
+#brew install hub
 brew install node
-# Needed to make terminal-notifier work w/ tmux.
-brew install reattach-to-user-namespace
 
 # Remove outdated versions from the cellar
 brew cleanup
@@ -114,14 +112,14 @@ brew install pgcli
 brew install dockutil
 dockutil --remove all
 
-dockutil --add '/Applications/Safari.app'
-dockutil --add '/Applications/iTerm.app'
-dockutil --add '/Applications/Calendar.app'
 dockutil --add '/Applications/App Store.app'
 dockutil --add '/Applications/System Preferences.app'
 dockutil --add '/Applications/Slack.app'
+dockutil --add '/Applications/iTerm.app'
+dockutil --add '/Applications/Safari.app'
+dockutil --add '/Applications/Google Chrome.app'
 dockutil --add '/Applications/Spotify.app'
-dockutil --add 'Applications/Google Chrome.app'
+dockutil --add '/Applications/Calendar.app'
 dockutil --add '/Applications' --view grid --display stack
 dockutil --add '~/Downloads' --view fan --display folder --allhomes
 dockutil --add '~' --view grid --display stack
