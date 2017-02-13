@@ -6,9 +6,11 @@ Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'vim-scripts/indentpython.vim'
+" Plug 'vim-scripts/indentpython.vim'
 Plug 'scrooloose/syntastic'
-Plug 'nvie/vim-flake8'
+" Plug 'nvie/vim-flake8'
+Plug 'jnurmine/zenburn'
+" Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
 
@@ -22,7 +24,8 @@ set number
 
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
+" colorscheme solarized
+colorscheme zenburn
 
 " system clipboard
 set clipboard=unnamed
@@ -35,14 +38,6 @@ set expandtab
 set wrap
 set laststatus=2
 scriptencoding utf-8
-
-" python PEP8 conventions
-au BufNewFile,BufRead *.py
-    \set softtabstop=4
-    \set textwidth=79
-    \set autoindent
-    \set fileformat=unix
-
 
 
 " enable folding with space bar
@@ -89,3 +84,7 @@ let g:lightline = {
       \ 'subseparator': { 'left': '|', 'right': '|' }
       \ }
 
+" attempt at python3 syntax checking
+let g:syntastic_python_python_exec = 'python3'
+" let g:syntastic_python_flake8_exec = 'python3'
+let g:syntastic_python_flake8_args = ['-m', 'flake8']

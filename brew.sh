@@ -17,14 +17,17 @@ brew install python3
 pip3 install --upgrade pip
 pip3 install jupyter
 
+pip3 install jupyter_contrib_nbextensions
+
+
 # scala
 brew install scala
 # spark
-brew install apache-spark
+# brew install apache-spark
 
 # scala support for jupyter
-brew install --HEAD paulp/extras/coursier # scala dependency manager
-jupyter-scala/jupyter-scala
+# brew install --HEAD paulp/extras/coursier # scala dependency manager
+# jupyter-scala/jupyter-scala
 
 # gui applications
 brew install caskroom/cask/brew-cask
@@ -108,18 +111,5 @@ brew cleanup
 # Amazing CLI for postgres made w/ python prompt-toolkit.
 brew install pgcli
 
-# cleanup the dock
+# to cleanup the dock via CLI
 brew install dockutil
-dockutil --remove all
-
-dockutil --add '/Applications/App Store.app'
-dockutil --add '/Applications/System Preferences.app'
-dockutil --add '/Applications/Slack.app'
-dockutil --add '/Applications/iTerm.app'
-dockutil --add '/Applications/Safari.app'
-dockutil --add '/Applications/Google Chrome.app'
-dockutil --add '/Applications/Spotify.app'
-dockutil --add '/Applications/Calendar.app'
-dockutil --add '/Applications' --view grid --display stack
-dockutil --add '~/Downloads' --view fan --display folder --allhomes
-dockutil --add '~' --view grid --display stack

@@ -27,6 +27,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
+# to make stuff like jupyter-vim work when holding a key down
+# defaults write -g ApplePressAndHoldEnabled -bool false
+# otherwise, holding down hjkl just executes it once...
+
 # turn on hot corners
 defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tr-corner -integer 3
 defaults write ~/Library/Preferences/com.apple.dock.plist wvous-bl-corner -integer 4
