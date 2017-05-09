@@ -40,6 +40,7 @@ defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tl-corner -integ
 
 # increase trackpad sensitivity
 defaults write -g com.apple.trackpad.scaling -float 15.0
+defaults write -g com.apple.mouse.scaling -float 15.0
 
 # dotbot stuff, ie sym-linking config files to this repo
 ./dotbot_install

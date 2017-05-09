@@ -10,6 +10,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/syntastic'
 " Plug 'nvie/vim-flake8'
 Plug 'jnurmine/zenburn'
+" Plug 'davidhalter/jedi-vim'
 " Plug 'Vimjas/vim-python-pep8-indent'
 
 call plug#end()
@@ -21,9 +22,11 @@ let python_highlight_all = 1
 
 filetype plugin indent on
 set number
-
+set t_Co=256
 set background=dark
-let g:solarized_termcolors=256
+" let g:solarized_termcolors=256
+let g:solarized_termtrans = 1
+
 " colorscheme solarized
 colorscheme zenburn
 
