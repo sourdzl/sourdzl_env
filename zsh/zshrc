@@ -54,6 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH="/usr/local/bin:$PATH"
+export PYTHONPATH="${PYTHONPATH}:/Users/${USER}/dev"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -102,4 +103,5 @@ alias zless=$PAGER
 export WORKON_HOME=~/dev/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 
-
+# brew complained about not having this, but not sure if it's good
+export PATH="/usr/local/sbin:$PATH"
