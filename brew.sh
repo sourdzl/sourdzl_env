@@ -13,7 +13,7 @@ brew update
 # installing python from brew so that pip comes with it
 brew install python
 # python3
-brew install python3
+brew install --upgrade python3
 pip3 install --upgrade pip
 pip3 install jupyter
 
@@ -21,7 +21,7 @@ pip3 install jupyter_contrib_nbextensions
 
 
 # scala
-brew install scala
+# brew install scala
 # spark
 # brew install apache-spark
 
@@ -35,7 +35,6 @@ brew tap caskroom/versions
 brew cask install android-file-transfer
 brew cask install dropbox
 brew cask install iterm2
-# brew cask install karabiner
 # brew cask install seil
 brew cask install slack
 brew cask install sublime-text
