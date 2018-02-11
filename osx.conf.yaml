@@ -1,6 +1,6 @@
 - clean: ['~']
 - shell:
-    - [./osx/apply-keys.sh, Applying OSX keyboard shortcuts...]
+    # - [./osx/apply-keys.sh, Applying OSX keyboard shortcuts...]
     # Manually make directory since there are multiple levels
     - [mkdir -p ~/.tmux/plugins, Creating tmux directory...]
 - link:

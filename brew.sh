@@ -16,6 +16,9 @@ brew install python
 brew install --upgrade python3
 pip3 install --upgrade pip
 
+pip3 install virtualenv virtualenvwrapper
+# TODO: manually go to the virtualenvwrapper.sh and point it to python3 install by brew
+
 #pip3 install jupyter
 
 #pip3 install jupyter_contrib_nbextensions
@@ -39,6 +42,7 @@ brew cask install flux
 brew cask install cheatsheet
 brew cask install vlc
 brew cask install spotify
+brew cask install google-chrome
 
 # better previews in finder
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
