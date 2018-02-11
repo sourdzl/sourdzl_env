@@ -5,8 +5,8 @@
 
 touch ~/.work_profile # make an empty file to fill in with work specific env variables, credentials, etc.
 
-ssh-keygen -t rsa -b 4096 -C "danzhanglee@gmail.com"
-ssh-add ~/.ssh/id_rsa
+# ssh-keygen -t rsa -b 4096 -C "danzhanglee@gmail.com"
+# ssh-add ~/.ssh/id_rsa
 
 # install brew, so we can run ./brew.sh
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

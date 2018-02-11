@@ -15,19 +15,16 @@ brew install python
 # python3
 brew install --upgrade python3
 pip3 install --upgrade pip
-pip3 install jupyter
 
-pip3 install jupyter_contrib_nbextensions
+#pip3 install jupyter
+
+#pip3 install jupyter_contrib_nbextensions
 
 
 # scala
 # brew install scala
 # spark
 # brew install apache-spark
-
-# scala support for jupyter
-# brew install --HEAD paulp/extras/coursier # scala dependency manager
-# jupyter-scala/jupyter-scala
 
 # gui applications
 brew install caskroom/cask/brew-cask
@@ -42,12 +39,11 @@ brew cask install flux
 brew cask install cheatsheet
 brew cask install vlc
 brew cask install spotify
-brew cask install macvim
 
 # better previews in finder
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
-brew cask install 1password # encrypted credentials in this directory
+# brew cask install 1password # encrypted credentials in this directory
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
@@ -62,8 +58,7 @@ brew install macvim --override-system-vim --with-lua --with-luajit --with-python
 # curl alternative
 brew install httpie
 
-# Install wget with IRI support
-brew install wget --enable-iri
+brew install wget
 
 # Install more recent versions of some OS X tools
 brew tap homebrew/dupes
@@ -71,7 +66,7 @@ brew install homebrew/dupes/grep
 
 
 # everything else
-brew install ag
+# brew install ag
 
 brew install htop # better than top
 
@@ -87,12 +82,6 @@ brew install fzf
 
 
 
-#########
-# Emacs #
-#########
-#brew install doxygen # tmux dependency?
-
-#brew install emacs --with-cocoa
 brew install tmux
 
 #######
@@ -101,8 +90,8 @@ brew install tmux
 # Install updated git
 brew install git
 # hub - Awesome git wrapper
-#brew install hub
-brew install node
+# brew install hub
+# brew install node
 
 # Remove outdated versions from the cellar
 brew cleanup
