@@ -5,8 +5,35 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+# install brew, so we can run ./brew.sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Make sure we’re using the latest Homebrew
 brew update
+
+# do some OS X configurations
+
+# turn off foreign/accented keys on hold
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# make keys repeat faster
+defaults write -g InitialKeyRepeat -int 5 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+
+
+# show hidden files in finder
+defaults write com.apple.finder AppleShowAllFiles YES
+
+# turn on hot corners
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tr-corner -integer 3
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-bl-corner -integer 4
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-br-corner -integer 2
+defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tl-corner -integer 3
+
+
+# increase trackpad sensitivity
+defaults write -g com.apple.trackpad.scaling -float 18.0
+defaults write -g com.apple.mouse.scaling -float 15.0
 
 # python and scala
 
