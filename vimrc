@@ -77,6 +77,9 @@ cnoremap <C-K>      <C-U>
 cnoremap <C-P> <Up>
 cnoremap <C-N> <Down>
 
+" ctrl-c to copy to system clipboard
+vmap <C-c> :w !pbcopy<CR><CR>
+
 " lightline config
 let g:lightline = {
       \ 'colorscheme': 'jellybeans',

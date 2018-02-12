@@ -57,7 +57,7 @@ pip3 install virtualenv virtualenvwrapper
 # brew install apache-spark
 
 # gui applications
-brew install caskroom/cask/brew-cask
+# brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 brew cask install android-file-transfer
 brew cask install dropbox
