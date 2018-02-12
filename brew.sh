@@ -32,7 +32,7 @@ defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tl-corner -integ
 
 
 # increase trackpad sensitivity
-defaults write -g com.apple.trackpad.scaling -float 18.0
+defaults write -g com.apple.trackpad.scaling -float 25.0
 defaults write -g com.apple.mouse.scaling -float 15.0
 
 # python and scala
