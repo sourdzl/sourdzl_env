@@ -31,6 +31,10 @@ set hidden
 
 set title
 
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
 " file/command completion more useful (default: first possible completion)
 set wildmenu
 set wildmode=list:longest
@@ -60,7 +64,7 @@ set clipboard=unnamed
 
 set encoding=utf8
 
- " indentation
+" indentation
 filetype plugin indent on
 set shiftwidth=4
 set tabstop=4
