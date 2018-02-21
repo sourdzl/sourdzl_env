@@ -20,7 +20,7 @@ default = simple
 
 [credential]
 helper = osxkeychain
+
 [user]
 name = Dan Lee
 email = danzhanglee@gmail.com
-signingkey = 519CAC154C85C82B17FB4783C3B67967116F6152
