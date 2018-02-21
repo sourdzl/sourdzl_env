@@ -4,7 +4,7 @@
     # Manually make directory since there are multiple levels
     - [mkdir -p ~/.tmux/plugins, Creating tmux directory...]
 - link:
-    # ~/.gitconfig: gitconfig
+    ~/.gitconfig: gitconfig
     ~/.vimrc: vimrc
     #~/.oh-my-zsh: oh-my-zsh
     #~/.oh-my-zsh/custom: zsh/oh-my-zsh-custom

@@ -1,0 +1,26 @@
+[alias]
+up = !git push -u origin "$(git rev-parse --abbrev-ref HEAD)"
+pushf = push --force-with-lease
+delete-branch = push origin --delete
+prune-branches = !git for-each-ref --shell --format='b="$(echo %(refname) | cut -sd / -f 3-)" && [ "$b" != master ] && git branch -d "$b"' refs/heads/ | sh
+
+# Listing things
+branches = branch -a
+
+graph = log --graph --oneline --decorate
+ls = !git-ls
+
+
+# Checkout
+co = checkout
+cob = checkout -b
+
+[push]
+default = simple
+
+[credential]
+helper = osxkeychain
+[user]
+name = Dan Lee
+email = danzhanglee@gmail.com
+signingkey = 519CAC154C85C82B17FB4783C3B67967116F6152

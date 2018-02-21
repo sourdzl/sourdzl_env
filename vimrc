@@ -15,13 +15,38 @@ Plug 'jnurmine/zenburn'
 
 call plug#end()
 
+" Use Vim settings, rather then Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
 set nocompatible
 
 syntax on
 let python_highlight_all = 1
 
-filetype plugin indent on
 set number
+" set relativenumber              "Relative line numbers are also good
+set history=1000                "Store lots of :cmdline history
+set showcmd                     "Show incomplete cmds down the bottom
+
+set hidden
+
+set title
+
+" file/command completion more useful (default: first possible completion)
+set wildmenu
+set wildmode=list:longest
+
+set wildignore=*.o,*.so,*.dylib,*.obj,*~ "stuff to ignore when tab completing
+set wildignore+=*.pyc,*.pyo,*.pyd,*.egg-info/**,*.egg,develop-eggs/**,__pycache__/**,.Python
+set wildignore+=*/venv/*,*/venv/**,venv/*,venv/**
+set wildignore+=*DS_Store*
+set wildignore+=node_modules/*,node_modules/**,*/node_modules/*,**/node_modules/**
+set wildignore+=log/**
+
+
+" smart case searching - case sensitive if capital letter present
+set ignorecase 
+set smartcase
+
 set t_Co=256
 set background=dark
 " let g:solarized_termcolors=256
@@ -34,6 +59,9 @@ colorscheme zenburn
 set clipboard=unnamed
 
 set encoding=utf8
+
+ " indentation
+filetype plugin indent on
 set shiftwidth=4
 set tabstop=4
 set smarttab
@@ -41,6 +69,15 @@ set expandtab
 set wrap
 set laststatus=2
 scriptencoding utf-8
+
+set linebreak    "Wrap lines at convenient points
+
+
+set backspace=indent,eol,start " backspace over everything in insert mode
+
+" More intuitive splitting
+set splitbelow
+set splitright
 
 
 " enable folding with space bar
@@ -92,5 +129,14 @@ let g:lightline = {
 
 " attempt at python3 syntax checking
 let g:syntastic_python_python_exec = 'python3'
-" let g:syntastic_python_flake8_exec = 'python3'
 let g:syntastic_python_flake8_args = ['-m', 'flake8']
+
+
+" vimpager configs
+
+let g:vimpager = {}
+let g:less     = {}
+let g:vimpager.ansiesc = 0
+
+" Goes at end of file
+set secure

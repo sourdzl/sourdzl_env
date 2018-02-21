@@ -13,6 +13,9 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
+alias dev="cd ~/dev"
+
+
 # Nicer less behavior
 export LESS=-Ri
 
