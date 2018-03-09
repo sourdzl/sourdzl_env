@@ -7,7 +7,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'altercation/vim-colors-solarized'
 Plug 'christoomey/vim-tmux-navigator'
 " Plug 'vim-scripts/indentpython.vim'
-Plug 'scrooloose/syntastic'
+Plug 'vim-syntastic/syntastic'
 " Plug 'nvie/vim-flake8'
 Plug 'jnurmine/zenburn'
 " Plug 'davidhalter/jedi-vim'
@@ -54,7 +54,7 @@ set smartcase
 set t_Co=256
 set background=dark
 " let g:solarized_termcolors=256
-let g:solarized_termtrans = 1
+" let g:solarized_termtrans = 1
 
 " colorscheme solarized
 colorscheme zenburn
@@ -132,8 +132,18 @@ let g:lightline = {
       \ }
 
 " attempt at python3 syntax checking
-let g:syntastic_python_python_exec = 'python3'
-let g:syntastic_python_flake8_args = ['-m', 'flake8']
+" let g:syntastic_python_python_exec = 'python3'
+" let g:syntastic_python_flake8_args = ['-m', 'flake8']
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_post_args='--ignore=E501'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 " vimpager configs
