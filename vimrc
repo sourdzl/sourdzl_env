@@ -135,7 +135,7 @@ let g:lightline = {
 " let g:syntastic_python_python_exec = 'python3'
 " let g:syntastic_python_flake8_args = ['-m', 'flake8']
 let g:syntastic_python_checkers = ['flake8']
-let g:syntastic_python_flake8_post_args='--ignore=E501'
+let g:syntastic_python_flake8_post_args='--ignore=E501,E711,E124'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*

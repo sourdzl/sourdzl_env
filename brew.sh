@@ -128,7 +128,7 @@ brew install git
 brew cleanup
 
 # Amazing CLI for postgres made w/ python prompt-toolkit.
-brew install pgcli
+# brew install pgcli
 
 # to cleanup the dock via CLI
 brew install dockutil

@@ -24,8 +24,9 @@ helper = osxkeychain
 [user]
 name = Dan Lee
 email = dan@pathlight.com
-	signingkey = 519CAC154C85C82B17FB4783C3B67967116F6152
+	signingkey = 37EE42DA20A8F551
+
 [commit]
-	gpgsign = true
+gpgsign = true
 [gpg]
-	program = gpg
+program = gpg
