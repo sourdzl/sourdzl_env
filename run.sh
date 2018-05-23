@@ -1,4 +1,5 @@
-# only works on OS X(?), at least havent tried linux
+#!/usr/bin/env bash
+# only works on OS X!
 
 # ssh key stuff, so that we can actually pull stuff from github
 # note: must add the key to github account keys for this script to work!
@@ -25,6 +26,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # afterwards, in vim do :PlugInstall
 
+
+./osx_settings.sh
+./brew.sh
+./dock.sh
 # make zshrc changes live
 source ~/.zshrc
 

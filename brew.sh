@@ -10,31 +10,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Make sure we’re using the latest Homebrew
 brew update
-
-# do some OS X configurations
-
-# turn off foreign/accented keys on hold
-defaults write -g ApplePressAndHoldEnabled -bool false
-
-# make keys repeat faster
-defaults write -g InitialKeyRepeat -int 12 # normal minimum is 15 (225 ms)
-defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
-
-
-# show hidden files in finder
-defaults write com.apple.finder AppleShowAllFiles YES
-
-# turn on hot corners
-defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tr-corner -integer 3
-defaults write ~/Library/Preferences/com.apple.dock.plist wvous-bl-corner -integer 4
-defaults write ~/Library/Preferences/com.apple.dock.plist wvous-br-corner -integer 2
-defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tl-corner -integer 3
-
-
-# increase trackpad sensitivity
-defaults write -g com.apple.trackpad.scaling -float 25.0
-defaults write -g com.apple.mouse.scaling -float 15.0
-
 # python and scala
 
 # installing python from brew so that pip comes with it
@@ -45,6 +20,8 @@ pip3 install --upgrade pip
 
 pip3 install virtualenv virtualenvwrapper
 # TODO: manually go to the virtualenvwrapper.sh and point it to python3 install by brew
+mkvirtualenv --python=/usr/local/bin/python3 nlpy
+ECHO 'manually go to the virtualenvwrapper.sh and point it to python3 install by brew'
 
 #pip3 install jupyter
 
@@ -65,7 +42,7 @@ brew cask install iterm2
 # brew cask install seil
 brew cask install slack
 brew cask install sublime-text
-brew cask install flux
+# brew cask install flux
 brew cask install cheatsheet
 brew cask install vlc
 brew cask install spotify

@@ -27,6 +27,5 @@ email = dan@pathlight.com
 	signingkey = 37EE42DA20A8F551
 
 [commit]
-gpgsign = true
 [gpg]
 program = gpg
