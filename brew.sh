@@ -10,7 +10,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Make sure we’re using the latest Homebrew
 brew update
-# python and scala
 
 # installing python from brew so that pip comes with it
 brew install python
@@ -74,6 +73,7 @@ brew install homebrew/dupes/grep
 
 
 # everything else
+brew install ctags
 # brew install ag
 
 brew install htop # better than top
