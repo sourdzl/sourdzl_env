@@ -35,12 +35,12 @@ ECHO 'manually go to the virtualenvwrapper.sh and point it to python3 install by
 # gui applications
 # brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
-brew cask install android-file-transfer
+# brew cask install android-file-transfer
 brew cask install dropbox
 brew cask install iterm2
 # brew cask install seil
 brew cask install slack
-brew cask install sublime-text
+# brew cask install sublime-text
 # brew cask install flux
 brew cask install cheatsheet
 brew cask install vlc
@@ -48,7 +48,7 @@ brew cask install spotify
 brew cask install google-chrome
 
 # better previews in finder
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
 
 # brew cask install 1password # encrypted credentials in this directory
 
@@ -60,20 +60,19 @@ brew install bash
 brew install zsh
 
 # Macvim!
-brew install macvim --override-system-vim --with-lua --with-luajit --with-python3
+brew install macvim --with-lua --with-luajit --with-python3
 
 # curl alternative
 brew install httpie
 
-brew install wget
+# brew install wget
 
 # Install more recent versions of some OS X tools
-brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
 
 # everything else
-brew install ctags
+# brew install ctags
 # brew install ag
 
 brew install htop # better than top
