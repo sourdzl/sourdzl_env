@@ -5,6 +5,7 @@
 ./run.sh
 ./brew.sh
 ./dock.sh
+./osx_settings.sh
 ```
 
 That's it!  Relies on dotbot to symlink things like '~/.vimrc' to the local file vimrc
