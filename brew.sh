@@ -61,6 +61,10 @@ brew install zsh
 
 # Macvim!
 brew install macvim --with-lua --with-luajit --with-python3
+brew install vim
+# add plug, for vim plugin management.  do :PlugInstall in vim to install plugins from .vimrc
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # curl alternative
 brew install httpie
