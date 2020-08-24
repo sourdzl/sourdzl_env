@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# do some OS X configurations
 
 # turn off foreign/accented keys on hold
 defaults write -g ApplePressAndHoldEnabled -bool false
@@ -26,6 +25,10 @@ defaults write -g com.apple.mouse.scaling -float 15.0
 
 # turn on right click
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
+# tap click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # dark mode
 sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true

@@ -43,9 +43,6 @@ brew cask install vlc
 brew cask install spotify
 brew cask install google-chrome
 
-# better previews in finder
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv qlimagesize webpquicklook suspicious-package quicklookase qlvideo
-
 # brew cask install 1password # encrypted credentials in this directory
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
