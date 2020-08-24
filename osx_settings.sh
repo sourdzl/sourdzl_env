@@ -24,3 +24,9 @@ defaults write -g com.apple.trackpad.scaling -float 25.0
 defaults write -g com.apple.mouse.scaling -float 15.0
 
 
+# turn on right click
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+
+# dark mode
+sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
+
