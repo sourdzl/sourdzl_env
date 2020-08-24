@@ -23,7 +23,6 @@ mkvirtualenv --python=/usr/local/bin/python3 nlpy
 ECHO 'manually go to the virtualenvwrapper.sh and point it to python3 install by brew'
 
 #pip3 install jupyter
-
 #pip3 install jupyter_contrib_nbextensions
 
 
@@ -38,9 +37,7 @@ brew tap caskroom/versions
 # brew cask install android-file-transfer
 brew cask install dropbox
 brew cask install iterm2
-# brew cask install seil
 brew cask install slack
-# brew cask install sublime-text
 brew cask install cheatsheet
 brew cask install vlc
 brew cask install spotify
@@ -53,26 +50,20 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
-# Install Bash 4
-# brew install bash
-# Install Zsh 5
-# brew install zsh # builtinto macos now
 
 # Macvim!
-brew install macvim --with-lua --with-luajit --with-python3
+brew install macvim
 brew install vim
 # add plug, for vim plugin management.  do :PlugInstall in vim to install plugins from .vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # curl alternative
-brew install httpie
-
+# brew install httpie
 # brew install wget
 
 # Install more recent versions of some OS X tools
 brew install homebrew/dupes/grep
-
 
 # everything else
 brew install htop # better than top
@@ -85,7 +76,6 @@ brew install reattach-to-user-namespace # copy/paste support for os-x and tmux
 # ctrl-r fuzzy finder
 brew install fzf
 /usr/local/opt/fzf/install
-
 
 brew install tmux
 
