@@ -57,7 +57,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # curl alternative
 # brew install httpie
-# brew install wget
+brew install wget
 
 # Install more recent versions of some OS X tools
 brew install homebrew/dupes/grep
