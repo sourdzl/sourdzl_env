@@ -14,8 +14,8 @@ brew update
 # installing python from brew so that pip comes with it
 brew install python
 # python3
-brew install --upgrade python3
-pip3 install --upgrade pip
+brew install python3
+pip3 install pip
 
 pip3 install virtualenv virtualenvwrapper
 # TODO: manually go to the virtualenvwrapper.sh and point it to python3 install by brew
@@ -41,7 +41,6 @@ brew cask install iterm2
 # brew cask install seil
 brew cask install slack
 # brew cask install sublime-text
-# brew cask install flux
 brew cask install cheatsheet
 brew cask install vlc
 brew cask install spotify
@@ -55,9 +54,9 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
 # Install Bash 4
-brew install bash
+# brew install bash
 # Install Zsh 5
-brew install zsh
+# brew install zsh # builtinto macos now
 
 # Macvim!
 brew install macvim --with-lua --with-luajit --with-python3
@@ -76,11 +75,7 @@ brew install homebrew/dupes/grep
 
 
 # everything else
-# brew install ctags
-# brew install ag
-
 brew install htop # better than top
-
 brew install vimpager # color highlighting in less type commands
 
 brew install tree # depth indented ls
@@ -90,7 +85,6 @@ brew install reattach-to-user-namespace # copy/paste support for os-x and tmux
 # ctrl-r fuzzy finder
 brew install fzf
 /usr/local/opt/fzf/install
-
 
 
 brew install tmux
