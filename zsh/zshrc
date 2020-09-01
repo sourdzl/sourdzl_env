@@ -100,8 +100,9 @@ export PAGER=/usr/local/bin/vimpager
 alias less=$PAGER
 alias zless=$PAGER
 
-export WORKON_HOME=~/dev/Envs
+export WORKON_HOME=~/code/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 
 # brew complained about not having this, but not sure if it's good
 export PATH="/usr/local/sbin:$PATH"
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters

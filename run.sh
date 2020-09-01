@@ -9,13 +9,16 @@ touch ~/.work_profile # make an empty file to fill in with work specific env var
 ssh-keygen -t rsa -b 4096 -C "danzhanglee@gmail.com"
 ssh-add ~/.ssh/id_rsa
 
+# delete default os x config so that symlinking works
+rm ~/.zshrc
+
 # dotbot stuff, ie sym-linking config files to this repo
 ./dotbot_install
 
 # use keychain github credentials
 git config --global credential.helper osxkeychain
 
-# instead of using hardcoded manual ones (this could work for linux?)
+# instead of using hardcoded manual ones
 # git config --global user.name "Dan Lee"
 # git config --global user.email danzhanglee@gmail.com
 
