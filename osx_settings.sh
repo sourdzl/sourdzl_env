@@ -7,9 +7,27 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 defaults write -g InitialKeyRepeat -int 11 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 
+# show some system info on login
+sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
+
+# show battery life
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+
+
+# clock settings
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  h:mm:ss a"
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
+defaults write com.apple.menuextra.clock IsAnalog -bool false
 
 # show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
+
+
+
+# Map navigation swipe to 3 fingers (turn this off to get 4-finger navigation swipe)
+defaults write com.apple.systempreferences com.apple.preference.trackpad.3fdrag-4fNavigate -bool false
+
 
 # turn on hot corners
 # Possible values:
