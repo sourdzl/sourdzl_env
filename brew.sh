@@ -17,7 +17,7 @@ brew install python
 brew install python3
 pip3 install pip
 
-pip3 install virtualenv virtualenvwrapper
+pip3 install virtualenv virtualenvwrapper --user
 # TODO: manually go to the virtualenvwrapper.sh and point it to python3 install by brew
 mkvirtualenv --python=/usr/local/bin/python3 nlpy
 ECHO 'manually go to the virtualenvwrapper.sh and point it to python3 install by brew'
@@ -57,7 +57,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 # curl alternative
 # brew install httpie
-brew install wget
 
 # Install more recent versions of some OS X tools
 brew install homebrew/dupes/grep
