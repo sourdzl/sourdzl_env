@@ -11,6 +11,7 @@ ssh-add ~/.ssh/id_rsa
 
 # delete default os x config so that symlinking works
 rm ~/.zshrc
+rm ~/.zsh_profile
 
 # dotbot stuff, ie sym-linking config files to this repo
 ./dotbot_install
