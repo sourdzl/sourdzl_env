@@ -69,6 +69,8 @@ brew install tree # depth indented ls
 
 brew install reattach-to-user-namespace # copy/paste support for os-x and tmux
 
+brew install zsh-syntax-highlighting
+
 # ctrl-r fuzzy finder
 brew install fzf
 /usr/local/opt/fzf/install
