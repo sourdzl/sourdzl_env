@@ -7,6 +7,10 @@ git config --global user.name dlee
 cd ~/code
 git clone --depth 1 ssh://git@phabricator.pinadmin.com/diffusion/P/pinboard.git
 
+# watcher
+/usr/local/bin/python3 -m pip install --upgrade pip
+python3 -m pip install macfsevents watchdog
+
 # install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
