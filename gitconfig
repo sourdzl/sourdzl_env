@@ -22,7 +22,7 @@ default = simple
 	helper = osxkeychain
 
 [user]
-	name = Dan Lee
+	name = dlee
 	email = dlee@pinterest.com
 # signingkey = 37EE42DA20A8F551
 # signing = key
