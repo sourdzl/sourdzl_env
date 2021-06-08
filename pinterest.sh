@@ -19,6 +19,7 @@ npm i -g yarn
 cd ~/code/pinboard/webapp && yarn
 
 # arcanist
+arc set-config editor vim
 arc set-config phabricator.uri https://phabricator.pinadmin.com/
 arc install-certificate
 

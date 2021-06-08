@@ -32,3 +32,5 @@ default = simple
 # 	program = gpg
 # [commit]
 # 	gpgsign = true
+[core]
+	editor = vim
