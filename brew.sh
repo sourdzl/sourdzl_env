@@ -23,13 +23,13 @@ pip3 install virtualenv virtualenvwrapper --user
 # brew install apache-spark
 
 # gui applications
-brew install dropbox
-	\ iterm2
-	\ slack
-	\ cheatsheet
-	\ vlc
-	\ spotify
-	\ google-chrome
+brew install dropbox \
+	iterm2 \
+	spotify \
+	vlc \
+	cheatsheet \
+	google-chrome \
+	slack
 
 # brew cask install 1password # encrypted credentials in this directory
 
