@@ -25,7 +25,6 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 ./dotbot.sh
 ./brew.sh
 ./dock.sh
-# make zshrc changes live
-source ~/.zshrc
 
 echo "SUCCESS!"
+zsh
