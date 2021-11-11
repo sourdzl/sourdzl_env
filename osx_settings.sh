@@ -23,11 +23,8 @@ defaults write com.apple.menuextra.clock IsAnalog -bool false
 # show hidden files in finder
 defaults write com.apple.finder AppleShowAllFiles YES
 
-
-
 # Map navigation swipe to 3 fingers (turn this off to get 4-finger navigation swipe)
 defaults write com.apple.systempreferences com.apple.preference.trackpad.3fdrag-4fNavigate -bool false
-
 
 # turn on hot corners
 # Possible values:
@@ -51,11 +48,9 @@ defaults write ~/Library/Preferences/com.apple.dock.plist wvous-tl-corner -integ
 defaults write com.apple.dock springboard-rows -int 16
 defaults write com.apple.dock springboard-columns -int 16
 
-
 # increase trackpad sensitivity
 defaults write -g com.apple.trackpad.scaling -float 25.0
-defaults write -g com.apple.mouse.scaling -float 15.0
-
+defaults write -g com.apple.mouse.scaling -float 12.0
 
 # turn on right click
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
@@ -70,8 +65,6 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 # speed up mission control animations
 defaults write com.apple.dock expose-animation-duration -float 0.5
 
-
-
 # supposedly improve bluetooth audio quality
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
@@ -85,7 +78,6 @@ defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebK
 
 # turn on dark mode: this doesn't work on 10.7.15
 # sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
-
 
 # caps lock into Control: https://apple.stackexchange.com/questions/141069/updating-modifier-keys-from-the-command-line-takes-no-effect
 defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-591-0 -array \
