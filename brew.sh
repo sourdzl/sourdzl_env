@@ -6,10 +6,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # install brew, so we can run ./brew.sh
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Make sure we’re using the latest Homebrew
-brew update
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # installing python from brew so that pip comes with it
 brew install python
@@ -18,30 +15,21 @@ brew install python3
 pip3 install pip
 
 pip3 install virtualenv virtualenvwrapper --user
-# TODO: manually go to the virtualenvwrapper.sh and point it to python3 install by brew
-mkvirtualenv --python=/usr/local/bin/python3 nlpy
-ECHO 'manually go to the virtualenvwrapper.sh and point it to python3 install by brew'
 
 #pip3 install jupyter
 #pip3 install jupyter_contrib_nbextensions
 
-
-# scala
 # brew install scala
-# spark
 # brew install apache-spark
 
 # gui applications
-# brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-# brew cask install android-file-transfer
-brew cask install dropbox
-brew cask install iterm2
-brew cask install slack
-brew cask install cheatsheet
-brew cask install vlc
-brew cask install spotify
-brew cask install google-chrome
+brew install dropbox
+	\ iterm2
+	\ slack
+	\ cheatsheet
+	\ vlc
+	\ spotify
+	\ google-chrome
 
 # brew cask install 1password # encrypted credentials in this directory
 
@@ -49,8 +37,8 @@ brew cask install google-chrome
 brew install findutils
 
 # Macvim!
-brew install macvim
 brew install vim
+brew install macvim
 # add plug, for vim plugin management.  do :PlugInstall in vim to install plugins from .vimrc
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
