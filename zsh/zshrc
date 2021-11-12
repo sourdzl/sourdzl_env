@@ -101,7 +101,7 @@ alias less=$PAGER
 alias zless=$PAGER
 
 export WORKON_HOME=~/code/Envs
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # brew complained about not having this, but not sure if it's good
 export PATH="/usr/local/sbin:$PATH"
