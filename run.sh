@@ -20,9 +20,13 @@ git config --global credential.helper osxkeychain
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # afterwards, in vim do :PlugInstall
 
+rm ~/.zshrc
+rm ~/.zsh_profile
+rm ~/.vimrc
+./dotbot_install
 
 ./osx_settings.sh
-./dotbot.sh
+# ./dotbot.sh don't think this exists, just do ./dotbot_install instead
 ./brew.sh
 ./dock.sh
 
