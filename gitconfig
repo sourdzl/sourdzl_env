@@ -23,7 +23,7 @@ default = simple
 
 [user]
 	name = dlee
-	email = dlee@pinterest.com
+	email = dlee@paradigm.xyz
 # signingkey = 37EE42DA20A8F551
 # signing = key
 
