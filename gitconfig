@@ -14,6 +14,7 @@ ls = !git-ls
 # Checkout
 co = checkout
 cob = checkout -b
+upstream = !git push -u origin HEAD
 
 [push]
 default = simple
@@ -24,8 +25,6 @@ default = simple
 [user]
 	name = dlee
 	email = dlee@paradigm.xyz
-# signingkey = 37EE42DA20A8F551
-# signing = key
 
 # [commit]
 # [gpg]
