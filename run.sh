@@ -20,6 +20,7 @@ touch ~/.work_profile # make an empty file to fill in with work specific env var
 # vim-plug package manager
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # afterwards, in vim do :PlugInstall
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 rm ~/.zshrc
 rm ~/.zsh_profile
