@@ -59,7 +59,7 @@ brew install zsh-syntax-highlighting
 
 # ctrl-r fuzzy finder
 brew install fzf
-/usr/local/opt/fzf/install
+$(brew --prefix)/opt/fzf/install
 
 brew install tmux
 
