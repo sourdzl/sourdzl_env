@@ -101,6 +101,7 @@ alias less=$PAGER
 alias zless=$PAGER
 
 export WORKON_HOME=~/code/Envs
+alias ibrew='arch -x86_64 /usr/local/bin/brew'
 # source /usr/local/bin/virtualenvwrapper.sh
 
 # The next line updates PATH for the Google Cloud SDK.

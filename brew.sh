@@ -12,6 +12,7 @@ brew install python
 brew install python3
 pip3 install pip
 
+python3 -m pip install --upgrade pip
 pip3 install virtualenv virtualenvwrapper --user
 
 #pip3 install jupyter
