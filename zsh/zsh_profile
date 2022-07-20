@@ -13,8 +13,7 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 
-alias dev="cd ~/dev"
-alias python='python3'
+alias dev="cd ~/code"
 
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 
@@ -22,11 +21,6 @@ export EDITOR=vim
 
 # Nicer less behavior
 export LESS=-Ri
-
-# node version control
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 #############
 # Utilities #
@@ -36,12 +30,3 @@ big-files() {
     # Uses gsort installed from `brew install coreutils`
     du -hsx * | gsort -rh | head -10
 }
-
-self-signed-certificates() {
-    # Needs OpenSSL installed. Generates key/cert pairs for use
-    openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365
-}
-
-# Share files with transfer.sh
-transfer() { if [ $# -eq 0 ]; then echo "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi
-             tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; }

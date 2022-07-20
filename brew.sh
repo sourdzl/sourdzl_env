@@ -33,7 +33,7 @@ brew install dropbox \
 # brew cask install 1password # encrypted credentials in this directory
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
-brew install findutils
+brew install findutils coreutils
 
 # Macvim!
 brew install vim
@@ -73,11 +73,12 @@ brew install git
 # brew install hub
 # brew install node
 
+# to cleanup the dock via CLI
+brew install dockutil
+
 # Remove outdated versions from the cellar
 brew cleanup
 
 # Amazing CLI for postgres made w/ python prompt-toolkit.
 # brew install pgcli
 
-# to cleanup the dock via CLI
-brew install dockutil

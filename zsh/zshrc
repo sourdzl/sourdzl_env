@@ -72,7 +72,6 @@ compinit
 
 # show completion menu when number of options is at least 2
 zstyle ':completion:*' menu select=2
-alias npm-exec='PATH=$(npm bin):$PATH'
 source ~/.fzf.zsh
 
 fd() {
@@ -82,7 +81,7 @@ fd() {
   cd "$dir"
 }
 
-setopt NO_NOMATCH
+setopt NO_NOMATCH # if there are no matches for globs, leave them alone and execute the command
 
 # Tmux session handling
 function fzf_tmux_session {
@@ -105,7 +104,13 @@ alias ibrew='arch -x86_64 /usr/local/bin/brew'
 # source /usr/local/bin/virtualenvwrapper.sh
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/danlee/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danlee/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f '/Users/danlee/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/danlee/Downloads/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/danlee/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danlee/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f '/Users/danlee/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/danlee/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+export PATH="$PATH:/Users/danlee/.foundry/bin"
+
+export PATH="$PATH:/usr/local/go/bin/"
