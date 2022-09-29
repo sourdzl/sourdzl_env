@@ -50,7 +50,7 @@ defaults write com.apple.dock springboard-columns -int 16
 
 # increase trackpad sensitivity
 defaults write -g com.apple.trackpad.scaling -float 25.0
-defaults write -g com.apple.mouse.scaling -float 12.0
+defaults write -g com.apple.mouse.scaling -float 8.0
 
 # turn on right click
 defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton

@@ -82,6 +82,7 @@ fd() {
 }
 
 setopt NO_NOMATCH # if there are no matches for globs, leave them alone and execute the command
+setopt no_hist_verify # https://unix.stackexchange.com/questions/38995/zsh-and-auto-execute-as-it-does-in-bash
 
 # Tmux session handling
 function fzf_tmux_session {
