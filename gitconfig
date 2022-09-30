@@ -18,6 +18,7 @@ upstream = !git push -u origin HEAD
 
 [push]
 default = simple
+	autoSetupRemote = true
 
 [credential]
 	helper = osxkeychain

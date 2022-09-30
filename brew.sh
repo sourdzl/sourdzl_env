@@ -69,9 +69,12 @@ brew install tmux
 #######
 # Install updated git
 brew install git
+
+# auto track origin whe we push
+git config --global --add --bool push.autoSetupRemote true
+
 # hub - Awesome git wrapper
 # brew install hub
-# brew install node
 
 # to cleanup the dock via CLI
 brew install dockutil
