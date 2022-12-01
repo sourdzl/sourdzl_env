@@ -4,6 +4,9 @@ pushf = push --force-with-lease
 delete-branch = push origin --delete
 prune-branches = !git for-each-ref --shell --format='b="$(echo %(refname) | cut -sd / -f 3-)" && [ "$b" != master ] && git branch -d "$b"' refs/heads/ | sh
 
+rbc = rebase --continue
+rbi = rebase --interactive
+
 # Listing things
 branches = branch -a
 
@@ -24,8 +27,15 @@ default = simple
 	helper = osxkeychain
 
 [user]
-	name = sourdzl
+	name = Dan Lee
 	email = dlee@paradigm.xyz
+    username = sourdzl
+
+[init]
+	defaultBranch = main
+
+[github]
+	user = sourdzl
 
 # [commit]
 # [gpg]
