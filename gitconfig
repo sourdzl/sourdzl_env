@@ -24,7 +24,7 @@ default = simple
 	helper = osxkeychain
 
 [user]
-	name = dlee
+	name = sourdzl
 	email = dlee@paradigm.xyz
 
 # [commit]
