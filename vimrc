@@ -12,6 +12,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'jnurmine/zenburn'
 " Plug 'davidhalter/jedi-vim'
 " Plug 'Vimjas/vim-python-pep8-indent'
+Plug 'powerman/vim-plugin-AnsiEsc'
 
 call plug#end()
 
@@ -149,8 +150,9 @@ let g:syntastic_check_on_wq = 0
 " vimpager configs
 
 let g:vimpager = {}
-let g:less     = {}
 let g:vimpager.ansiesc = 0
+let g:less     = {}
+
 
 " Goes at end of file
 set secure
