@@ -15,7 +15,7 @@ bindkey '^Z' fancy-ctrl-z
 
 alias dev="cd ~/code"
 
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+eval "$(pyenv init --path)"
 
 export EDITOR=vim
 

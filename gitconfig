@@ -29,14 +29,14 @@ default = simple
 
 [user]
 	name = Dan Lee
-	email = sourdzl@users.noreply.github.com
-    username = sourdzl
+	email = dan@aztecprotocol.com
+    username = dan-aztec
 
 [init]
 	defaultBranch = main
 
 [github]
-	user = sourdzl
+	user = dan-aztec
 
 # [commit]
 # [gpg]

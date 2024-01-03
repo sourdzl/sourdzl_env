@@ -5,15 +5,17 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
+brew install pyenv
 
-# installing python from brew so that pip comes with it
-brew install python
+# python2
+pyenv install 2.7.18
+pyenv install 3.12.0
+
 # python3
 brew install python3
 pip3 install pip
 
 python3 -m pip install --upgrade pip
-pip3 install virtualenv virtualenvwrapper --user
 
 #pip3 install jupyter
 #pip3 install jupyter_contrib_nbextensions
@@ -85,3 +87,5 @@ brew cleanup
 # Amazing CLI for postgres made w/ python prompt-toolkit.
 # brew install pgcli
 
+# vscode
+brew install --cask visual-studio-code

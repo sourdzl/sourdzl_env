@@ -22,21 +22,25 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.c
 # afterwards, in vim do :PlugInstall
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-rm ~/.zshrc
-rm ~/.zsh_profile
-rm ~/.vimrc
-rm ~/.gitconfig
-./dotbot_install
-
-# install brew, so we can run ./brew.sh
+# install brew, so we can run ./brew.sh and install python
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/danlee/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
-./osx_settings.sh
 ./brew.sh
+./osx_settings.sh
 ./dock.sh
+
+echo 'deleting local config files and symlinking to repo copy...'
+rm ~/.zshrc
+rm ~/.zsh_profile
+rm ~/.vimrc
+rm ~/.gitconfig
+
+# install python2 in brew.sh, which was removed from os x.  this is needed for dotbot
+./dotbot_install
 
 echo "SUCCESS!"
 zsh
