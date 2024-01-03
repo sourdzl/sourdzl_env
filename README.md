@@ -1,13 +1,11 @@
-# Clone my environment/preferences.  in progress, but working!
+# Clone my environment/preferences.  in progress, but semi-working!
 
-* To Run
+* To run, clone the repository and do
 ```
 ./run.sh
-./brew.sh
-./dock.sh
-./osx_settings.sh
 ```
 
-That's it!  Relies on dotbot to symlink things like '~/.vimrc' to the local file vimrc
+That's it!  Relies on dotbot to symlink things like '~/.vimrc' to the local file vimrc.  
+# This will delete existing .zsh_profile, .zshrc, .gitconfig files, and is intended only for running on fresh computers.
 
-This is just for OS X (assuming docker is in place for linux envs).
+This is for OS X.  It configures hot corners and much more responsive keyboard and mouse/trackpad, along with a reduced Dock and some basic applications installed via brew.
