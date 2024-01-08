@@ -5,9 +5,9 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-brew install pyenv
+brew install pyenv pyenv-virtualenv
 
-# python2
+# python2, removed from OS X recent versions
 pyenv install 2.7.18
 pyenv install 3.12.0
 
