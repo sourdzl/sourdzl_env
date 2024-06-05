@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # Install stuff via dotbot
 set -e
 if [ `uname` == "Darwin" ]; then
