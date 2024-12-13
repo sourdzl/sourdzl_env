@@ -66,30 +66,6 @@ defaults write -g com.apple.mouse.tapBehavior -int 1
 defaults write com.apple.dock expose-animation-duration -float 0.5
 
 # supposedly improve bluetooth audio quality
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
 
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Dan Lee | Pinterest"
-
-# safari show full url
-defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
-# backspace to view previous page
-defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2BackspaceKeyNavigationEnabled -bool true
-
-
-# turn on dark mode: this doesn't work on 10.7.15
-# sudo defaults write /Library/Preferences/.GlobalPreferences.plist _HIEnableThemeSwitchHotKey -bool true
-
-# caps lock into Control: https://apple.stackexchange.com/questions/141069/updating-modifier-keys-from-the-command-line-takes-no-effect
-defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-591-0 -array \
-'<dict>
-    <key>HIDKeyboardModifierMappingDst</key>
-    <integer>30064771303</integer>
-    <key>HIDKeyboardModifierMappingSrc</key>
-    <integer>30064771302</integer>
-</dict>' \
-'<dict>
-    <key>HIDKeyboardModifierMappingDst</key>
-    <integer>30064771302</integer>
-    <key>HIDKeyboardModifierMappingSrc</key>
-    <integer>30064771303</integer>
-</dict>'
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Dan Lee | Gauntlet Restaking"
