@@ -15,8 +15,6 @@ bindkey '^Z' fancy-ctrl-z
 
 alias dev="cd ~/code"
 
-eval "$(pyenv init --path)"
-
 export EDITOR=vim
 
 # Nicer less behavior
