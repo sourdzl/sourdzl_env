@@ -15,6 +15,11 @@ bindkey '^Z' fancy-ctrl-z
 
 alias dev="cd ~/code"
 
+# uv path initialization (ensure uv tools are available)
+if [ -f "$HOME/.local/bin/uv" ]; then
+    export PATH="$HOME/.local/bin:$PATH"
+fi
+
 export EDITOR=vim
 
 # Nicer less behavior

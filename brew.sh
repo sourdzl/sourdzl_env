@@ -5,11 +5,11 @@ sudo -v
 # Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-# python3
-brew install python3
-pip3 install pip
+# Install uv for Python package and project management
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-python3 -m pip install --upgrade pip
+# python3 (keep for system compatibility)
+brew install python3
 
 #pip3 install jupyter
 #pip3 install jupyter_contrib_nbextensions
@@ -66,10 +66,13 @@ brew install tmux
 # Install updated git
 brew install git
 
-# auto track origin whe we push
+# auto track origin when we push
 git config --global --add --bool push.autoSetupRemote true
 
-# hub - Awesome git wrapper
+# GitHub CLI - official GitHub command line tool
+brew install gh
+
+# hub - Awesome git wrapper (legacy)
 # brew install hub
 
 # to cleanup the dock via CLI
