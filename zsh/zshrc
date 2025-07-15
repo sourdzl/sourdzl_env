@@ -72,7 +72,8 @@ compinit
 # show completion menu when number of options is at least 2
 zstyle ':completion:*' menu select=2
 
-fd() {
+# fzf directory navigation function (renamed to avoid conflict with fd tool)
+fzdir() {
   local dir
   dir=$(find ${1:-*} -path '*/\.*' -prune \
                   -o -type d -print 2> /dev/null | fzf +m) &&
@@ -84,9 +85,13 @@ setopt no_hist_verify # https://unix.stackexchange.com/questions/38995/zsh-and-a
 
 # Tmux session handling
 function fzf_tmux_session {
-    selection_string=$(tmux list-windows | fzf)
-    session_number=$(ruby -e "print '${selection_string}'[/^(\d+):/, 1]")
-    tmux select-window -t :$session_number
+    if tmux list-windows >/dev/null 2>&1; then
+        selection_string=$(tmux list-windows | fzf)
+        if [ -n "$selection_string" ]; then
+            session_number=$(echo "$selection_string" | cut -d':' -f1)
+            tmux select-window -t :$session_number
+        fi
+    fi
 }
 alias fzftmux=fzf_tmux_session
 
@@ -108,10 +113,3 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$PATH:/Users/danlee/.foundry/bin"
 
 export PATH="$PATH:/usr/local/go/bin/"
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/sourdzl/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/sourdzl/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/sourdzl/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/sourdzl/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
-eval "$(direnv hook zsh)"

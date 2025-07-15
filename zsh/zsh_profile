@@ -25,6 +25,10 @@ export LESS=-Ri
 #############
 # Output the biggest 10 files in human readable form.
 big-files() {
-    # Uses gsort installed from `brew install coreutils`
-    du -hsx * | gsort -rh | head -10
+    # Use gsort on macOS (from coreutils), sort on Linux
+    if command -v gsort >/dev/null 2>&1; then
+        du -hsx * | gsort -rh | head -10
+    else
+        du -hsx * | sort -rh | head -10
+    fi
 }
